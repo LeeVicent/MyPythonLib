@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>eb2441e1-84ff-4d3a-a8d1-0626c886d0a7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>MyLib\core\study.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>MyPythonLib</Name>
+    <RootNamespace>MyPythonLib</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyLib\" />
+    <Folder Include="MyLib\core\" />
+    <Folder Include="MyLib\core\file\" />
+    <Folder Include="MyLib\core\file\CSV_op\" />
+    <Folder Include="MyLib\core\file\NormalFile_op\" />
+    <Folder Include="MyLib\core\net\" />
+    <Folder Include="MyLib\core\net\HTML_analyze\" />
+    <Folder Include="MyLib\core\net\resource_check\" />
+    <Folder Include="MyLib\core\micro_function\" />
+    <Folder Include="MyLib\core\computer_vision\image\" />
+    <Folder Include="MyLib\core\computer_vision\" />
+    <Folder Include="MyLib\core\test\" />
+    <Folder Include="MyLib\core\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyLib\core\__pycache__\pro_init.cpython-35.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyLib\core\computer_vision\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\file\CSV_op\file_CSV_read.py" />
+    <Compile Include="MyLib\core\file\CSV_op\__init__.py" />
+    <Compile Include="MyLib\core\file\NormalFile_op\file_append.py" />
+    <Compile Include="MyLib\core\file\NormalFile_op\file_copy.py" />
+    <Compile Include="MyLib\core\file\NormalFile_op\__init__.py" />
+    <Compile Include="MyLib\core\file\__init__.py" />
+    <Compile Include="MyLib\core\computer_vision\image\add_num_for_img.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\computer_vision\image\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\main.py" />
+    <Compile Include="MyLib\core\micro_function\identifying_code.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\micro_function\key_block.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\micro_function\variable_arguments.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\micro_function\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\net\HTML_analyze\get_tag.py" />
+    <Compile Include="MyLib\core\net\HTML_analyze\__init__.py" />
+    <Compile Include="MyLib\core\net\resource_check\isexist.py" />
+    <Compile Include="MyLib\core\net\resource_check\__init__.py" />
+    <Compile Include="MyLib\core\net\__init__.py" />
+    <Compile Include="MyLib\core\pro_init.py" />
+    <Compile Include="MyLib\core\study.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\test\MyClass.py" />
+    <Compile Include="MyLib\core\test\python_study.py" />
+    <Compile Include="MyLib\core\test\study2.py" />
+    <Compile Include="MyLib\core\test\__init__.py" />
+    <Compile Include="MyLib\core\__init__.py" />
+  </ItemGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
