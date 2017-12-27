@@ -13,7 +13,7 @@ wDraw = 0.8 * width
 hDraw = 0.08 * width
 
 # Draw image
-font = ImageFont.truetype('D:\\Lanehum.ttf', 30)  # use absolute font path to fix 'IOError: cannot open resource'
+font = ImageFont.truetype('D:\\么达体.ttf', 30)  # use absolute font path to fix 'IOError: cannot open resource'
 draw = ImageDraw.Draw(img)
 draw.text((wDraw,hDraw), msgNum, font = font, fill = (255, 33, 33))
 

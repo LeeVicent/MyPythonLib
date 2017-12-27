@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>eb2441e1-84ff-4d3a-a8d1-0626c886d0a7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MyLib\core\study.py</StartupFile>
+    <StartupFile>MyLib\core\computer_vision\image_process\template_match.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -13,7 +13,7 @@
     <Name>MyPythonLib</Name>
     <RootNamespace>MyPythonLib</RootNamespace>
     <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,11 +28,13 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MyLib\" />
     <Folder Include="MyLib\core\" />
+    <Folder Include="MyLib\core\computer_vision\face_recognition\" />
+    <Folder Include="MyLib\core\computer_vision\toolbox\" />
     <Folder Include="MyLib\core\file\" />
     <Folder Include="MyLib\core\file\CSV_op\" />
     <Folder Include="MyLib\core\file\NormalFile_op\" />
@@ -40,15 +42,33 @@
     <Folder Include="MyLib\core\net\HTML_analyze\" />
     <Folder Include="MyLib\core\net\resource_check\" />
     <Folder Include="MyLib\core\micro_function\" />
-    <Folder Include="MyLib\core\computer_vision\image\" />
+    <Folder Include="MyLib\core\computer_vision\image_process\" />
     <Folder Include="MyLib\core\computer_vision\" />
     <Folder Include="MyLib\core\test\" />
     <Folder Include="MyLib\core\__pycache__\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MyLib\core\computer_vision\toolbox\CameraCapture.pyc" />
+    <Content Include="MyLib\core\computer_vision\toolbox\ImageProcessTool.pyc" />
+    <Content Include="MyLib\core\computer_vision\toolbox\__init__.pyc" />
     <Content Include="MyLib\core\__pycache__\pro_init.cpython-35.pyc" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyLib\core\computer_vision\face_recognition\face_recognition.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\computer_vision\face_recognition\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\computer_vision\image_process\template_match.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLib\core\computer_vision\toolbox\CameraCapture.py" />
+    <Compile Include="MyLib\core\computer_vision\toolbox\common.py" />
+    <Compile Include="MyLib\core\computer_vision\toolbox\FileInterfaceTool.py" />
+    <Compile Include="MyLib\core\computer_vision\toolbox\ImageProcessTool.py" />
+    <Compile Include="MyLib\core\computer_vision\toolbox\video.py" />
+    <Compile Include="MyLib\core\computer_vision\toolbox\__init__.py" />
     <Compile Include="MyLib\core\computer_vision\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -58,10 +78,10 @@
     <Compile Include="MyLib\core\file\NormalFile_op\file_copy.py" />
     <Compile Include="MyLib\core\file\NormalFile_op\__init__.py" />
     <Compile Include="MyLib\core\file\__init__.py" />
-    <Compile Include="MyLib\core\computer_vision\image\add_num_for_img.py">
+    <Compile Include="MyLib\core\computer_vision\image_process\add_num_for_img.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MyLib\core\computer_vision\image\__init__.py">
+    <Compile Include="MyLib\core\computer_vision\image_process\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MyLib\core\main.py" />
